@@ -134,6 +134,8 @@ dmypy.json
 .idea/workspace.xml
 .idea/modules.xml
 .idea/inspectionProfiles/profiles_settings.xml
+
+# data and images
 /workshop/notebooks/saved_torch_segmentation_model.pt
 /workshop/notebooks/simple_nuclei_segmodel_from_json_pytorch.czann
 /workshop/notebooks/simple_pytorch_nuclei_segmodel_legacy_pytorch.czmodel
