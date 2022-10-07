@@ -1,14 +1,14 @@
 - [General Remarks](#general-remarks)
-  - [Short Talk](#short-talk)
-  - [Workshop](#workshop)
-    - [Prerequisites](#prerequisites)
-    - [Workshop Content](#workshop-content)
-    - [Train a Deep-Learning Model in APEER](#train-a-deep-learning-model-in-apeer)
-    - [Use the model in your python code or inside Napari](#use-the-model-in-your-python-code-or-inside-napari)
-    - [Tile an array to apply a deep learning model using cztile package](#tile-an-array-to-apply-a-deep-learning-model-using-cztile-package)
-    - [Use the model inside Napari](#use-the-model-inside-napari)
-    - [Train your own model and package it a using the czmodel package](#train-your-own-model-and-package-it-a-using-the-czmodel-package)
-    - [Read, process and write CZIs using pylibCZIrw](#read-process-and-write-czis-using-pylibczirw)
+- [Short Talk](#short-talk)
+- [Workshop](#workshop)
+  - [Prerequisites](#prerequisites)
+  - [Workshop Content](#workshop-content)
+  - [Train a Deep-Learning Model in APEER](#train-a-deep-learning-model-in-apeer)
+  - [Use the model in your python code or inside Napari](#use-the-model-in-your-python-code-or-inside-napari)
+  - [Tile an array to apply a deep learning model using cztile package](#tile-an-array-to-apply-a-deep-learning-model-using-cztile-package)
+  - [Use the model inside Napari](#use-the-model-inside-napari)
+  - [Train your own model and package it a using the czmodel package](#train-your-own-model-and-package-it-a-using-the-czmodel-package)
+  - [Read, process and write CZIs using pylibCZIrw](#read-process-and-write-czis-using-pylibczirw)
 - [Disclaimer](#disclaimer)
 
 
@@ -17,7 +17,7 @@
 
 This repository contains all the material for the workshop held during the [CytoData2022] symposium.
 
-## Short Talk
+# Short Talk
 
 **Open ecosystem for data-centric model development**
 
@@ -29,9 +29,9 @@ This repository contains all the material for the workshop held during the [Cyto
 
 ***
 
-## Workshop
+# Workshop
 
-### Prerequisites
+## Prerequisites
 
 Ideally one is using Google Colab to run the notebooks in order to not rely on local python environments.
 
@@ -39,7 +39,7 @@ If you prefer to run the notebooks locally it is recommended to create a fresh c
 
     conda env create --file env_cyto2022.yml
 
-### Workshop Content
+## Workshop Content
 
 The workshop is focusing on various tools and python packages published be ZEISS for reading CZI images, exchanging Deep-Learning models and general image processing The following topics will be covered:
 
@@ -51,7 +51,7 @@ The workshop is focusing on various tools and python packages published be ZEISS
 * Read, process and write CZIs using [pylibCZIrw]
 * Create an [APEER] module from your own python code
 
-### Train a Deep-Learning Model in APEER
+## Train a Deep-Learning Model in APEER
 
 The general idea is to learn how to label a dataset on [APEER] which will be shared among the participants.
 
@@ -69,7 +69,7 @@ Dataset Name: **cyto2022_nuclei**
 
 Remark: To save time the modelfile: **cyto2022_nuc.czann** will be provided 
 
-### Use the model in your python code or inside Napari
+## Use the model in your python code or inside Napari
 
 Once the model is trained it can be downloaded directly to your hard disk and used to segment images.
 
@@ -78,7 +78,7 @@ Run a prediction using a *.czann file:&nbsp;
 
 ***
 
-### Tile an array to apply a deep learning model using cztile package
+## Tile an array to apply a deep learning model using cztile package
 
 In order to apply a model to an image one typically has to tile the array. While there are many ways to achieve this, we @ZEISS mainly use the [cztile] package for that, which is also used inside the [Napari] plugin. The tiling strategy ensures that for a given total area with a minimal number of tiles of constant total area such that:
 
@@ -98,9 +98,9 @@ It is not linked directly to the CZI file format, but can be of use to process s
 The basic usage can be inferred from this sample notebook:&nbsp;
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zeissmicroscopy/cytodata_2022_workshop/blob/main/workshop/notebooks/cztile_0_0_2.ipynb)
 
-### Use the model inside Napari
+## Use the model inside Napari
 
-In order to use such a model one needs a running python environment with [Napari] and the [napari-czann-segment] plugin installed.
+In order to use such a model one needs a running python environment with [Napari] and the napari-czann-segment plugin installed.
 
 It can install it via [pip]:
 
@@ -113,7 +113,7 @@ For more detailed information about the plugin please go to: [Napari Hub - napar
 
 ***
 
-### Train your own model and package it a using the czmodel package
+## Train your own model and package it a using the czmodel package
 
 The package provides simple-to-use conversion tools to generate a CZANN file from a [PyTorch], 
 [TensorFlow] or [ONNX] model that resides in memory or on disk to be usable in the
@@ -124,7 +124,7 @@ Train a simple model and package as *.czann file:&nbsp;
 
 ***
 
-### Read, process and write CZIs using pylibCZIrw
+## Read, process and write CZIs using pylibCZIrw
 
 This package provides a simple and easy-to-use Python wrapper for [libCZI] - a cross-platform C++ library to read and write multi-dimensional CZI image documents.
 
@@ -141,9 +141,11 @@ For more detailed information refer to the pylibCZIrw-documentation.html shipped
 
 # Disclaimer
 
-The library, the notebook and scripts are free to use for everybody. Carl Zeiss Microscopy GmbH undertakes no warranty concerning the use of those tools. Use them at your own risk.
+This content of this repository is free to use for everybody. Carl Zeiss Microscopy GmbH's ZEN software undertakes no warranty concerning the use of those scripts, image analysis settings and ZEN experiments. Use them on your own risk.
 
 **By using any of those examples you agree to this disclaimer.**
+
+Version: 2022.10.07
 
 Copyright (c) 2022 Carl Zeiss AG, Germany. All Rights Reserved.
 
