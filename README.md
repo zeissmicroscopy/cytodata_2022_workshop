@@ -9,7 +9,6 @@
     - [Use the model inside Napari](#use-the-model-inside-napari)
     - [Train your own model and package it a using the czmodel package](#train-your-own-model-and-package-it-a-using-the-czmodel-package)
     - [Read, process and write CZIs using pylibCZIrw](#read-process-and-write-czis-using-pylibczirw)
-    - [Create an APEER module from your own python code](#create-an-apeer-module-from-your-own-python-code)
 - [Disclaimer](#disclaimer)
 
 
@@ -75,7 +74,7 @@ Remark: To save time the modelfile: **cyto2022_nuc.czann** will be provided
 Once the model is trained it can be downloaded directly to your hard disk and used to segment images.
 
 Run a prediction using a *.czann file:&nbsp;
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sebi06/cytodata_2022/blob/main/workshop/notebooks/run_prediction_from_czann.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zeissmicroscopy/cytodata_2022_workshop/blob/main/workshop/notebooks/run_prediction_from_czann.ipynb)
 
 ***
 
@@ -97,7 +96,7 @@ It is not linked directly to the CZI file format, but can be of use to process s
 
 
 The basic usage can be inferred from this sample notebook:&nbsp;
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sebi06/cytodata_2022/blob/main/workshop/notebooks/cztile_0_0_2.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zeissmicroscopy/cytodata_2022_workshop/blob/main/workshop/notebooks/cztile_0_0_2.ipynb)
 
 ### Use the model inside Napari
 
@@ -121,7 +120,7 @@ The package provides simple-to-use conversion tools to generate a CZANN file fro
 ZEN, APEER, Vison4D software platforms and also in your own code. For details and more information examples please go to: [czmodel]
 
 Train a simple model and package as *.czann file:&nbsp;
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sebi06/cytodata_2022/blob/main/workshop/notebooks/SingleClassSemanticSegmentation_PyTorch.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zeissmicroscopy/cytodata_2022_workshop/blob/main/workshop/notebooks/SingleClassSemanticSegmentation_PyTorch.ipynb)
 
 ***
 
@@ -134,13 +133,9 @@ This package provides a simple and easy-to-use Python wrapper for [libCZI] - a c
 * The core concept of pylibCZIrw is focussing on reading and writing 2D image planes by specifying the dimension indices and its location in order to only read or write **what is really needed**.
 
 The basic usage can be inferred from this sample notebook:&nbsp;
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sebi06/cytodata_2022/blob/main/workshop/notebooks/Using_pylibCZIrw_3_2_0.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zeissmicroscopy/cytodata_2022_workshop/blob/main/workshop/notebooks/Using_pylibCZIrw_3_2_0.ipynb)
 
 For more detailed information refer to the pylibCZIrw-documentation.html shipped with the source distribution of this package (see the **Download files** section).
-
-### Create an APEER module from your own python code
-
-XXX
 
 ***
 
