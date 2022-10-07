@@ -148,4 +148,7 @@ workshop/notebooks/newCZI_zloc.czi
 
 # download folders
 
+# download folders
+
 /workshop/notebooks/nucleus_data/**
+/workshop/notebooks/data/**
