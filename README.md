@@ -19,7 +19,7 @@ This repository contains all the material for the workshop held during the [Cyto
 
 # Short Talk
 
-**Open ecosystem for data-centric model development**
+**Title: ZEISS - Open software ecosystem for data-centric model development**
 
 <p><img src="images/Open_ecosystem_slide1.png" title="Train and USe models anywhere" width="800"></p>
 
