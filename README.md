@@ -49,7 +49,6 @@ The workshop is focusing on various tools and python packages published be ZEISS
 * Use the model inside [Napari]
 * Train your own model and package it a using the [czmodel] package
 * Read, process and write CZIs using [pylibCZIrw]
-* Create an [APEER] module from your own python code
 
 ## Train a Deep-Learning Model in APEER
 
