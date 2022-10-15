@@ -9,6 +9,7 @@
   - [Use the model inside Napari](#use-the-model-inside-napari)
   - [Train your own model and package it a using the czmodel package](#train-your-own-model-and-package-it-a-using-the-czmodel-package)
   - [Read, process and write CZIs using pylibCZIrw](#read-process-and-write-czis-using-pylibczirw)
+  - [Create a simple APEER Module](#create-a-simple-apeer-module)
 - [Disclaimer](#disclaimer)
 
 
@@ -49,6 +50,7 @@ The workshop is focusing on various tools and python packages published be ZEISS
 * Use the model inside [Napari]
 * Train your own model and package it a using the [czmodel] package
 * Read, process and write CZIs using [pylibCZIrw]
+* Optional: Create a simple APEER Module
 
 ## Train a Deep-Learning Model in APEER
 
@@ -62,11 +64,13 @@ Dataset Name: **cyto2022_nuclei**
 * label background areas and edges
 * embrace the idea of partial labeling
 
-![Partial labeling on APEER](./images/APEER_annotation_auto_background.gif)
+![Partial Annotation on APEER](./images/APEER_annotation_auto_background.gif)
 
 * start a training to get a trained model as a *.czann file
 
-Remark: To save time the modelfile: **cyto2022_nuc.czann** will be provided 
+Remark: To save time the modelfile: **cyto2022_nuc.czann** will be provided
+
+For more detailed information please visit: **[APEER Docs - Partial Annotations](https://docs.apeer.com/machine-learning/annotation-guidelines)**
 
 ## Use the model in your python code or inside Napari
 
@@ -135,6 +139,17 @@ The basic usage can be inferred from this sample notebook:&nbsp;
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zeissmicroscopy/cytodata_2022_workshop/blob/main/workshop/notebooks/Using_pylibCZIrw_3_2_0.ipynb)
 
 For more detailed information refer to the pylibCZIrw-documentation.html shipped with the source distribution of this package (see the **Download files** section).
+
+
+## Create a simple APEER Module
+
+the [APEER] platform does not allow to train deep learning models but also has tools to create so-called APEER modules and even workflows built upon a container infrastructure.
+
+![APEER Architecture](./images/apeer_architecture.png)
+
+In short - APEER modules are Docker containers with a UI specification that allows using them on APEER or inside the ZEN software platform. For details please visit: **[APEER Architecture and Modules](https://docs.apeer.com/create-modules/the-apeer-architecture)**
+
+A simple example module based on python can be found here: **[APEER - Simple Python Module](./workshop/apeer_module_example/README.md)**
 
 ***
 
