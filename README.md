@@ -149,6 +149,8 @@ the [APEER] platform does not allow to train deep learning models but also has t
 
 In short - APEER modules are Docker containers with a UI specification that allows using them on APEER or inside the ZEN software platform. For details please visit: **[APEER Architecture and Modules](https://docs.apeer.com/create-modules/the-apeer-architecture)**
 
+![APEER Module - UI Creation](./images/apeer_module_ui.png)
+
 A simple example module based on python can be found here: **[APEER - Simple Python Module](./workshop/apeer_module_example/README.md)**
 
 ***
@@ -159,7 +161,7 @@ This content of this repository is free to use for everybody. Carl Zeiss Microsc
 
 **By using any of those examples you agree to this disclaimer.**
 
-Version: 2022.10.07
+Version: 2022.10.15
 
 Copyright (c) 2022 Carl Zeiss AG, Germany. All Rights Reserved.
 
