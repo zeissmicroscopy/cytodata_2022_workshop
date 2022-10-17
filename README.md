@@ -5,8 +5,8 @@
   - [Workshop Content](#workshop-content)
   - [Train a Deep-Learning Model in APEER](#train-a-deep-learning-model-in-apeer)
   - [Use the model in your python code or inside Napari](#use-the-model-in-your-python-code-or-inside-napari)
-  - [Tile an array to apply a deep learning model using cztile package](#tile-an-array-to-apply-a-deep-learning-model-using-cztile-package)
-  - [Use the model inside Napari](#use-the-model-inside-napari)
+  - [Tile an array to apply a processing function using cztile package](#tile-an-array-to-apply-a-processing-function-using-cztile-package)
+  - [Use the model inside Napari (optional)](#use-the-model-inside-napari-optional)
   - [Train your own model and package it a using the czmodel package](#train-your-own-model-and-package-it-a-using-the-czmodel-package)
   - [Read, process and write CZIs using pylibCZIrw](#read-process-and-write-czis-using-pylibczirw)
   - [Create a simple APEER Module](#create-a-simple-apeer-module)
@@ -34,9 +34,9 @@ This repository contains all the material for the workshop held during the [Cyto
 
 ## Prerequisites
 
-Ideally one is using Google Colab to run the notebooks in order to not rely on local python environments.
+All notebooks are supposed to be run in Google Colab in order to not rely on local python environments.
 
-If you prefer to run the notebooks locally it is recommended to create a fresh conda environment. Please feel to use the provided YML file (at your own risk) to create such an environment:
+If you prefer or have to run the notebooks locally it is recommended to create a fresh conda environment. Please feel to use the provided [YML file](workshop/notebooks/env_cyto2022.yml) (at your own risk) to create such an environment:
 
     conda env create --file env_cyto2022.yml
 
@@ -44,7 +44,7 @@ If you prefer to run the notebooks locally it is recommended to create a fresh c
 
 The workshop is focusing on various tools and python packages published be ZEISS for reading CZI images, exchanging Deep-Learning models and general image processing The following topics will be covered:
 
-* Train a Deep-Learning Model in [APEER]
+* [Train a Deep-Learning Model in [APEER]
 * Use the model in your python code
 * Tile an array to apply a deep learning model using [cztile] package
 * Use the model inside [Napari]
@@ -81,7 +81,7 @@ Run a prediction using a *.czann file:&nbsp;
 
 ***
 
-## Tile an array to apply a deep learning model using cztile package
+## Tile an array to apply a processing function using cztile package
 
 In order to apply a model to an image one typically has to tile the array. While there are many ways to achieve this, we @ZEISS mainly use the [cztile] package for that, which is also used inside the [Napari] plugin. The tiling strategy ensures that for a given total area with a minimal number of tiles of constant total area such that:
 
@@ -101,7 +101,7 @@ It is not linked directly to the CZI file format, but can be of use to process s
 The basic usage can be inferred from this sample notebook:&nbsp;
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zeissmicroscopy/cytodata_2022_workshop/blob/main/workshop/notebooks/cztile_0_0_2.ipynb)
 
-## Use the model inside Napari
+## Use the model inside Napari (optional)
 
 In order to use such a model one needs a running python environment with [Napari] and the napari-czann-segment plugin installed.
 
