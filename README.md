@@ -46,7 +46,7 @@ If you prefer or have to run the notebooks locally it is recommended to create a
 
 The workshop is focusing on various tools and python packages published be ZEISS for reading CZI images, exchanging Deep-Learning models and general image processing The following topics will be covered:
 
-* [Train a Deep-Learning Model in [APEER]
+* Train a Deep-Learning Model in [APEER]
 * Use the model in your python code
 * Tile an array to apply a deep learning model using [cztile] package
 * Use the model inside [Napari]
