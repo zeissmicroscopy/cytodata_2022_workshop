@@ -40,6 +40,8 @@ If you prefer or have to run the notebooks locally it is recommended to create a
 
     conda env create --file env_cyto2022.yml
 
+> Important: If one wants to test the labeling & training directly on [APEER] or create a module it is required to have an account.
+
 ## Workshop Content
 
 The workshop is focusing on various tools and python packages published be ZEISS for reading CZI images, exchanging Deep-Learning models and general image processing The following topics will be covered:
@@ -152,6 +154,8 @@ In short - APEER modules are Docker containers with a UI specification that allo
 ![APEER Module - UI Creation](./images/apeer_module_ui.png)
 
 A simple example module based on python can be found here: **[APEER - Simple Python Module](./workshop/apeer_module_example/README.md)**
+
+Please follow the instruction on how to create an [APEER] module using the built-in documentation and copy this code into your own module repository.
 
 ***
 
